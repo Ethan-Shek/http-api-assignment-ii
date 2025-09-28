@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Our simple HTTP server</title>
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  
-  <script>
-
-  </script>
+  <meta charset="utf-8">
+  <title>HTTP API Assignment II</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="top">
-    <h3>POST Status Code Tests</h3>
-    <form id="nameForm" action="/addUser" method="post">
-      <label for="name">Name: </label>
-      <input id="nameField" type="text" name="name" />
-      <label for="age">Age: </label>
-      <input id="ageField" type="number" name="age" min="0" max="100" step="1"/>
-      <input type="submit" value="Add User" />
-    </form>
-    <form id="userForm" action="/getUsers" method="get">
-      <select id='urlField'>
-        <option value='/getUsers'>/getUsers</option>
-        <option value='/notReal'>/notReal</option>
-      </select>
-      <select id="methodSelect">
-        <option value="get">GET</option>
-        <option value="head">HEAD</option>
-      </select>
-      <input type="submit" value="Get User" />
-    </form>
-  </section>
-  <section id="content">
-  </section>
+  <h1>HTTP API Assignment II</h1>
+
+  <div class="section">
+    <h2>Get Users / Not Real</h2>
+    <button id="getUsersGet">Get Users (GET)</button>
+    <button id="getUsersHead">Get Users (HEAD)</button>
+    <button id="notRealGet">Not Real (GET)</button>
+    <button id="notRealHead">Not Real (HEAD)</button>
+  </div>
+
+  <div class="section">
+    <h2>Add User</h2>
+    <input id="nameField" type="text" placeholder="Name">
+    <input id="ageField" type="number" placeholder="Age">
+    <button id="addUserBtn">Add User (POST)</button>
+  </div>
+
+  <div class="section">
+    <h2>Output</h2>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="client.js"></script>
 </body>
 </html>
