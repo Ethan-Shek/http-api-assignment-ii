@@ -1,0 +1,22 @@
+{
+  "name": "http-api-assignment-ii",
+  "version": "1.0.0",
+  "description": "HTTP API Assignment II - Rich Media Web App Dev II",
+  "main": "server.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "npm run pretest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ethan-Shek/http-api-assignment-ii.git"
+  },
+  "author": "Ethan Shek",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0"
+  }
+}
